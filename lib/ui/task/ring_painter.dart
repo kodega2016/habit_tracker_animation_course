@@ -40,7 +40,7 @@ class RingPainer extends CustomPainter {
     canvas.drawArc(
       Rect.fromCircle(center: center, radius: radius),
       -pi / 2,
-      2 * progress * pi,
+      2 * pi * progress,
       false,
       foregroundPaint,
     );

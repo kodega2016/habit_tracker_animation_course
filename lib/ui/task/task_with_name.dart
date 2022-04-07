@@ -14,8 +14,11 @@ class TaskWithName extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        AnimatedTask(
-          iconName: taskPreset.iconName,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          child: AnimatedTask(
+            iconName: taskPreset.iconName,
+          ),
         ),
         SizedBox(height: 8),
         Text(
